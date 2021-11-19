@@ -2,8 +2,10 @@
   "name": "project-marketplace",
   "version": "0.0.1",
   "scripts": {
-    "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
+    "watch:css": "postcss src/tailwind.css -o src/style.css --watch",
+    "build:css": "postcss src/tailwind.css -o src/style.css",
+    "dev": "concurrently \"npm run watch:css\" \"svelte-kit dev --port 4114\"",
+    "build": "npm run build:css && svelte-kit build",
     "preview": "svelte-kit preview"
   },
   "devDependencies": {
