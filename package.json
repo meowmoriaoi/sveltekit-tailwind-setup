@@ -1,0 +1,20 @@
+{
+  "name": "project-marketplace",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "preview": "svelte-kit preview"
+  },
+  "devDependencies": {
+    "@sveltejs/kit": "next",
+    "autoprefixer": "^10.4.0",
+    "concurrently": "^6.4.0",
+    "cssnano": "^5.0.11",
+    "postcss": "^8.3.11",
+    "postcss-cli": "^9.0.2",
+    "svelte": "^3.42.6",
+    "tailwindcss": "^2.2.19"
+  },
+  "type": "module"
+}
